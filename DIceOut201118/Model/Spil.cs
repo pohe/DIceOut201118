@@ -20,7 +20,7 @@ namespace DIceOut201118.Model
             set
             {
                 value = _terning1;
-                OnPropertyChanged();
+                //OnPropertyChanged();
             }
         }
 
@@ -30,7 +30,7 @@ namespace DIceOut201118.Model
             set
             {
                 value = _terning2;
-                OnPropertyChanged();
+                //OnPropertyChanged();
             }
         }
 
