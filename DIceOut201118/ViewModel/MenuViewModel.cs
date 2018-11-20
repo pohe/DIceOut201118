@@ -36,6 +36,13 @@ namespace DIceOut201118.ViewModel
                 }
             };
 
+            NavigationItems.Add(new NavigationViewItem()
+            {
+                Content = "Blue Page",
+                Icon = new SymbolIcon(Symbol.Caption),
+                Tag = typeof(BluePage)
+            });
+
             SelectedItem = NavigationItems.First() as NavigationViewItem;
         }
 
