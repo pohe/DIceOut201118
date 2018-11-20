@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="DIceOut201118.MainPage"
+    x:Class="DIceOut201118.View.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:DIceOut201118"
