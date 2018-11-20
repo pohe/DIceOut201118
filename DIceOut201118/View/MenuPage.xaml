@@ -14,7 +14,8 @@
     </Page.DataContext>
 
     <Grid>
-        <NavigationView MenuItemsSource="{Binding NavigationItems}" SelectionChanged="NavigationView_SelectionChanged" IsSettingsVisible="False">
+        <NavigationView MenuItemsSource="{Binding NavigationItems}" SelectionChanged="NavigationView_SelectionChanged" IsSettingsVisible="False"
+                        IsBackEnabled="{Binding ElementName=navFrame, Path=CanGoBack}" SelectedItem="{Binding SelectedItem}">
 
             <Frame x:Name="navFrame"/>
         </NavigationView>
