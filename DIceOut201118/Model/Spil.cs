@@ -34,7 +34,7 @@ namespace DIceOut201118.Model
             }
         }
 
-        private int _score;
+        private int _score = 0;
 
         public int Score
         {
