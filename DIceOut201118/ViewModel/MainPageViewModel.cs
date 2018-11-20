@@ -64,8 +64,8 @@ namespace DIceOut201118.ViewModel
 
         public void UpdateImages()
         {
-            ImageSource1 = Faces[Spil.Terning1.FaceValue];
-            ImageSource2 = Faces[Spil.Terning2.FaceValue];
+            ImageSource1 = Faces[Spil.Terning1.FaceValue - 1];
+            ImageSource2 = Faces[Spil.Terning2.FaceValue - 1];
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
