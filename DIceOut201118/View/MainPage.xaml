@@ -24,11 +24,11 @@
         </Button>
         <StackPanel Orientation="Horizontal" Spacing="10">
             <TextBlock Text="Terning 1"/>
-            <TextBlock Text="{Binding Spil.Terning1.FaceValue, Mode=TwoWay}"/>
+            <Image Width="75"  Source="{Binding ImageSource1, Mode=TwoWay}"></Image>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Spacing="10">
             <TextBlock Text="Terning 2"/>
-            <TextBlock Text="{Binding Spil.Terning2.FaceValue, Mode=TwoWay}"/>
+            <Image Width="75" Source="{Binding ImageSource2, Mode=TwoWay}"></Image>
         </StackPanel>
     </StackPanel>
 </Page>
