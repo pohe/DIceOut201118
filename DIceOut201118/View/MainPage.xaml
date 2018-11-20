@@ -14,7 +14,7 @@
     </Page.DataContext>
     <StackPanel>
         <TextBlock FontSize="50" Text="{Binding Spil.Score, Mode=TwoWay}"></TextBlock>
-            <Button Command="{Binding RollCommand}">
+        <Button Command="{Binding RollCommand}">
             <Button.Content>
                 <StackPanel Width="100">
                     <Image Source="/Assets/die_roll.png"></Image>
@@ -22,5 +22,13 @@
                 </StackPanel>
             </Button.Content>
         </Button>
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <TextBlock Text="Terning 1"/>
+            <TextBlock Text="{Binding Spil.Terning1.FaceValue}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <TextBlock Text="Terning 2"/>
+            <TextBlock Text="{Binding Spil.Terning2.FaceValue}"/>
+        </StackPanel>
     </StackPanel>
 </Page>
