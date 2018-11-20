@@ -34,7 +34,7 @@ namespace DIceOut201118.Model
         {
             
 
-            _faceValue = _random.Next(1, 7);
+            FaceValue = _random.Next(1, 7);
 
         }
 
