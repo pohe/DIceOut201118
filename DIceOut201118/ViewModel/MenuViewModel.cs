@@ -12,9 +12,17 @@ using DIceOut201118.View;
 
 namespace DIceOut201118.ViewModel
 {
-    public class MenuViewModel
+    public class MenuViewModel: INotifyPropertyChanged
     {
         public ObservableCollection<NavigationViewItemBase> NavigationItems { get; set; }
+        private NavigationViewItem _selectedItem;
+
+        public NavigationViewItem SelectedItem
+        {
+            get { return _selectedItem; }
+            set { _selectedItem = value; }
+        }
+
 
         public MenuViewModel()
         {
@@ -28,6 +36,15 @@ namespace DIceOut201118.ViewModel
                 }
             };
 
+            SelectedItem = NavigationItems.First() as NavigationViewItem;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
