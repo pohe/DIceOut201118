@@ -9,6 +9,7 @@ namespace DIceOut201118.Model
     class Terning
     {
         private int _faceValue;
+        private Random _random;
 
         public int FaceValue
         {
@@ -18,14 +19,15 @@ namespace DIceOut201118.Model
 
         public Terning()
         {
+            _random = new Random(DateTime.Now.Millisecond);
 
         }
 
         public void Roll()
         {
-            Random random = new Random();
+            
 
-            _faceValue = random.Next(1, 6);
+            _faceValue = _random.Next(1, 6);
 
         }
 
