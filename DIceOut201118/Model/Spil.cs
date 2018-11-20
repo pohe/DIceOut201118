@@ -34,7 +34,7 @@ namespace DIceOut201118.Model
             }
         }
 
-        private int _score;
+        private int _score = 0;
 
         public int Score
         {
@@ -56,7 +56,7 @@ namespace DIceOut201118.Model
             Terning1.Roll();
             Terning2.Roll();
 
-            if (Terning1 == Terning2)
+            if (Terning1.FaceValue == Terning2.FaceValue)
             {
                 Score = Score + 50;
             }
